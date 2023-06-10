@@ -1,0 +1,39 @@
+
+/* Into (Top/First) Section */
+
+.parent-container {
+    border: 1px solid black;
+    padding: 5px;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: rgb(198, 255, 255);
+    gap:10px;
+    justify-content: space-between;
+}
+/* -- Media Quaries -- */
+@media screen and (max-width: 962px) {
+.parent-container {
+    flex-flow: row wrap;
+}
+
+    
+}
+
+.item-img {
+    display: block;
+    max-width: 175px;
+}
+
+
+.child-1, .child-2, .child-3, .child-4 {
+    border: 1px solid red;
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    min-width: 200px;
+
+}
+
+h3
+
+/* -- END -- */
