@@ -1,39 +1,174 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+
+}
+:root {
+    --button-color: darkgray;
+}
+
+/* -- Header/Nac Code -- */
+
+/* -- Background code is pure CSS code by: https://codepen.io/P1N2O/pen/pyBNzX -- with few modification by myself*/
+header {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 800% 800%;
+	animation: gradient 20s ease infinite;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ /* -- end of code snippet by https://codepen.io/P1N2O/pen/pyBNzX -- */
+
+body{
+
+    margin-top: 75px;
+    background: rgb(235, 235, 235);
+    
+}
+
+header{
+    position: fixed;
+    text-align: center;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(197, 197, 197);
+    box-shadow: 0px 3px 15px rgb(161, 161, 161);
+    
+    
+
+}
+#navBar{
+    text-align: right;
+    padding: 15px;
+    margin-right: 25px;
+    
+}
+
+.header-li{
+    display: inline-block;
+    width:150px;
+    font-size: 22px;
+    color: black
+}
+
+.navFont{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.navFont:hover {
+color: var(--pri-color);
+text-shadow: 0 0 6px white;
+transform: scale(0.92);
+transition: .3s;
+
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 85px;
+}
 
 /* Into (Top/First) Section */
 
 .parent-container {
-    border: 1px solid black;
-    padding: 5px;
+    padding: 15px 85px;
     display: inline-flex;
     flex-direction: row;
-    background-color: rgb(198, 255, 255);
     gap:10px;
-    justify-content: space-between;
+    margin: 25px;
+    position: relative;
+    
 }
 /* -- Media Quaries -- */
 @media screen and (max-width: 962px) {
 .parent-container {
     flex-flow: row wrap;
-}
-
     
 }
 
-.item-img {
-    display: block;
-    max-width: 175px;
 }
 
 
-.child-1, .child-2, .child-3, .child-4 {
-    border: 1px solid red;
-    margin: 5px;
-    padding: 5px;
-    background-color: white;
-    min-width: 200px;
+.child-1 {
+    text-align: right;
+    max-width: 25%;
+    padding: 10px;
+}
+
+.child-2 {
+    padding: 10px;
+    background: linear-gradient(315deg, rgba(105,105,105,1) 0%, rgba(34,34,34,1) 73%);
+    box-shadow: 5px 5px 10px gray;
+    margin-left: 0px;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    border: 4px white solid;
+}
+
+/* -- child-2 Hover CSS -- */
+
+.child-2:hover {
+    transition: 0.5s;
+    border: 4px rgb(255, 0, 179) solid;
+    box-shadow: 5px 5px 20px rgb(68, 68, 68);
+    
 
 }
 
-h3
+.title-header{ 
+    text-align: center;
+}
 
-/* -- END -- */
+.img-float {
+    float: right;
+    width:150px;
+    align-self: flex-end;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+p {
+    padding: 0 8px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0 0 3px 1px black;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    cursor:pointer;
+}
+
+.git-button-text {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+background-color: var(--button-color);
+box-shadow:0 0 0px 2px var(--button-color);
+color: black;
+font-weight: bolder;
+
+}
